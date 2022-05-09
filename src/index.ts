@@ -1,1 +1,1 @@
-// All your application logic goes here
+export * from './server';
