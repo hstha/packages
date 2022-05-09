@@ -11,6 +11,20 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "import/extensions": [
+      "error",
+      {
+        ".ts": "never"
+      }
+    ],
+    "no-dupe-class-members": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts"]
+      }
+    }
   }
 }
